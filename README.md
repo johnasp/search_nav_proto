@@ -1,2 +1,2 @@
-# compass-boilerplate
-John's compass website starter files
+# Mobile refinements menu
+Touch friendly mobile refinements prototype 
