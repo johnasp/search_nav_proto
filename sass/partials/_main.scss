@@ -44,10 +44,9 @@ header {
 	a {
 		display: inline-block;
 		background: $filter-but;
-	  padding: 6px 10px;
+	  padding: 8px 10px;
 	  margin: 0 6px 6px 0;
 	  position: relative;
-	  @include border-radius(3px);
 		span {
 			color:#fff;
 			font-size: 14px;
@@ -76,7 +75,6 @@ header {
 		width: 100%;
 		color: #000;
 		text-transform: uppercase;
-
 		&[class*="category"] svg {
 			width: 13px;
 			float: right;
@@ -92,9 +90,11 @@ header {
 			}
 		}
 	}
-
 	nav {
 		display: none;
+		&.grid a {
+			width: 49.3%;
+		}
 		a {
 			position: relative;
 			border-bottom: none;
@@ -114,3 +114,7 @@ header {
 		}
 	}
 }
+	#category2 {
+		display: block;
+	}
+

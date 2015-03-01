@@ -35,7 +35,7 @@ body, .main-nav {
 /*
  * Corrects `block` display not defined in IE 8/9.
  */
-/* line 33, ../sass/partials/_normalize.scss */
+/* line 43, ../sass/partials/_normalize.scss */
 article,
 aside,
 details,
@@ -53,7 +53,7 @@ summary {
 /*
  * Corrects `inline-block` display not defined in IE 8/9.
  */
-/* line 51, ../sass/partials/_normalize.scss */
+/* line 53, ../sass/partials/_normalize.scss */
 audio,
 canvas,
 video {
@@ -164,7 +164,7 @@ legend {
  * 2. Corrects font size not being inherited in all browsers.
  * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
  */
-/* line 163, ../sass/partials/_normalize.scss */
+/* line 166, ../sass/partials/_normalize.scss */
 button,
 input,
 select,
@@ -181,7 +181,7 @@ textarea {
  * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 177, ../sass/partials/_normalize.scss */
+/* line 178, ../sass/partials/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -194,7 +194,7 @@ input {
  * 3. Improves usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 190, ../sass/partials/_normalize.scss */
+/* line 193, ../sass/partials/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -208,7 +208,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 202, ../sass/partials/_normalize.scss */
+/* line 203, ../sass/partials/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -218,7 +218,7 @@ input[disabled] {
  * 1. Addresses box sizing set to `content-box` in IE 8/9.
  * 2. Removes excess padding in IE 8/9.
  */
-/* line 212, ../sass/partials/_normalize.scss */
+/* line 213, ../sass/partials/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -246,7 +246,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 236, ../sass/partials/_normalize.scss */
+/* line 237, ../sass/partials/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -255,7 +255,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in Firefox 4+.
  */
-/* line 245, ../sass/partials/_normalize.scss */
+/* line 246, ../sass/partials/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -315,7 +315,7 @@ header {
 }
 /* line 15, ../sass/partials/_main.scss */
 header a {
-  background: #0199CB;
+  background: #0199cb;
   border: 6px solid #fff;
   padding: 12px;
   width: 100%;
@@ -350,20 +350,17 @@ header a span {
 /* line 44, ../sass/partials/_main.scss */
 .filters a {
   display: inline-block;
-  background: #69B55D;
-  padding: 6px 10px;
+  background: #69b55d;
+  padding: 8px 10px;
   margin: 0 6px 6px 0;
   position: relative;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
 }
-/* line 51, ../sass/partials/_main.scss */
+/* line 50, ../sass/partials/_main.scss */
 .filters a span {
   color: #fff;
   font-size: 14px;
 }
-/* line 55, ../sass/partials/_main.scss */
+/* line 54, ../sass/partials/_main.scss */
 .filters a svg {
   width: 10px;
   height: 10px;
@@ -373,26 +370,26 @@ header a span {
   top: 1px;
 }
 
-/* line 66, ../sass/partials/_main.scss */
+/* line 65, ../sass/partials/_main.scss */
 .refinements {
   margin-top: 60px;
 }
-/* line 68, ../sass/partials/_main.scss */
+/* line 67, ../sass/partials/_main.scss */
 .refinements > a {
   border-top: 1px solid #d9d9d9;
 }
-/* line 70, ../sass/partials/_main.scss */
+/* line 69, ../sass/partials/_main.scss */
 .refinements > a:nth-last-child(2) {
   border-bottom: 1px solid #d9d9d9;
 }
-/* line 74, ../sass/partials/_main.scss */
+/* line 73, ../sass/partials/_main.scss */
 .refinements a {
   padding: 12px;
   width: 100%;
   color: #000;
   text-transform: uppercase;
 }
-/* line 80, ../sass/partials/_main.scss */
+/* line 78, ../sass/partials/_main.scss */
 .refinements a[class*="category"] svg {
   width: 13px;
   float: right;
@@ -400,18 +397,22 @@ header a span {
   padding-top: 4px;
   height: 20px;
 }
-/* line 87, ../sass/partials/_main.scss */
+/* line 85, ../sass/partials/_main.scss */
 .refinements a.active {
   font-weight: bold;
 }
-/* line 89, ../sass/partials/_main.scss */
+/* line 87, ../sass/partials/_main.scss */
 .refinements a.active svg {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
-/* line 96, ../sass/partials/_main.scss */
+/* line 93, ../sass/partials/_main.scss */
 .refinements nav {
   display: none;
+}
+/* line 95, ../sass/partials/_main.scss */
+.refinements nav.grid a {
+  width: 49.3%;
 }
 /* line 98, ../sass/partials/_main.scss */
 .refinements nav a {
@@ -426,10 +427,15 @@ header a span {
 }
 /* line 106, ../sass/partials/_main.scss */
 .refinements nav a svg {
-  fill: #69B55D;
+  fill: #69b55d;
   position: absolute;
   top: 15px;
   right: 13px;
   width: 15px;
   height: 18px;
+}
+
+/* line 117, ../sass/partials/_main.scss */
+#category2 {
+  display: block;
 }
