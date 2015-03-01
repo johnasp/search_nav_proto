@@ -84,6 +84,8 @@ header {
 		}
 		&.active {
 			font-weight: bold;
+					background: #e1e1e1;
+
 			svg {
 				transform: rotate(90deg);
 				-webkit-transform: rotate(90deg);

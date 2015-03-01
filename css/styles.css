@@ -400,32 +400,33 @@ header a span {
 /* line 85, ../sass/partials/_main.scss */
 .refinements a.active {
   font-weight: bold;
+  background: #e1e1e1;
 }
-/* line 87, ../sass/partials/_main.scss */
+/* line 89, ../sass/partials/_main.scss */
 .refinements a.active svg {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
-/* line 93, ../sass/partials/_main.scss */
+/* line 95, ../sass/partials/_main.scss */
 .refinements nav {
   display: none;
 }
-/* line 95, ../sass/partials/_main.scss */
+/* line 97, ../sass/partials/_main.scss */
 .refinements nav.grid a {
   width: 49.3%;
 }
-/* line 98, ../sass/partials/_main.scss */
+/* line 100, ../sass/partials/_main.scss */
 .refinements nav a {
   position: relative;
   border-bottom: none;
   text-transform: capitalize;
 }
-/* line 102, ../sass/partials/_main.scss */
+/* line 104, ../sass/partials/_main.scss */
 .refinements nav a.selected {
   color: #519946;
   background: #ebf5e9;
 }
-/* line 106, ../sass/partials/_main.scss */
+/* line 108, ../sass/partials/_main.scss */
 .refinements nav a svg {
   fill: #69b55d;
   position: absolute;
@@ -435,7 +436,7 @@ header a span {
   height: 18px;
 }
 
-/* line 117, ../sass/partials/_main.scss */
+/* line 119, ../sass/partials/_main.scss */
 #category2 {
   display: block;
 }
