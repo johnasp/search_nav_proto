@@ -56,11 +56,17 @@ $(".filters").on("click", "a", function() {
 });
 
 
+// SCROLL REFINEMENT HEADER BUTTON TO TOP WHEN CLICKED
+$(".refinements > a").click(function() {
+	var myString = $(this).css("height");
+	var buttonHeight = myString.replace("px", "");
+	buttonHeight + 5;
+	console.log(buttonHeight);
 
-//$(".refinements nav a").click(function() {
-//	var stickyHeight = $("header").height();
-//	$(".refinements").css('margin-top',stickyHeight);
-//});	
+    $('html, body').animate({
+       scrollTop: (($(this).offset().top) - (55))
+    }, 500);
+});
 
 
 
