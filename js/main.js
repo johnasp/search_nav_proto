@@ -13,7 +13,7 @@ $( document ).ready(function() {
 
 
 // Adding and removing refinment button
-$(".refinements nav a").click(function(e) {
+$(".refinements nav a").click(function() {
 	// Strip product count and brackets from text to generate unique ID 
 	var filterText = $(this).text();
 	var n=filterText.indexOf("(");
@@ -37,7 +37,6 @@ $(".refinements nav a").click(function(e) {
 			$(".refinements").css('margin-top',0);
 			$(".filters").css('margin-top',60);
 		}
-		//Prevent jumping back to top behaviour when clicked
 
 	}
 	else {
@@ -46,7 +45,6 @@ $(".refinements nav a").click(function(e) {
 		$(".refinements #label-" + uniqueID + " svg").remove();
 		$(".filters #label-" + uniqueID).remove();
 	}
-			e.preventDefault();
 });
 
 // Remove filter button and associated active state on refinment button
