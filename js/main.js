@@ -38,7 +38,7 @@ $(".refinements nav a").click(function(e) {
 			$(".filters").css('margin-top',60);
 		}
 		//Prevent jumping back to top behaviour when clicked
-		e.preventDefault();
+
 	}
 	else {
 		// Remove active state for refinement selections and also remove related filter button
@@ -46,6 +46,7 @@ $(".refinements nav a").click(function(e) {
 		$(".refinements #label-" + uniqueID + " svg").remove();
 		$(".filters #label-" + uniqueID).remove();
 	}
+			e.preventDefault();
 });
 
 // Remove filter button and associated active state on refinment button
