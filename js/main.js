@@ -13,7 +13,7 @@ $( document ).ready(function() {
 
 
 // Adding and removing refinment button
-$(".refinements nav a").click(function() {
+$(".refinements nav a").click(function(e) {
 	// Strip product count and brackets from text to generate unique ID 
 	var filterText = $(this).text();
 	var n=filterText.indexOf("(");
@@ -37,7 +37,8 @@ $(".refinements nav a").click(function() {
 			$(".refinements").css('margin-top',0);
 			$(".filters").css('margin-top',60);
 		}
-
+		//Prevent jumping back to top behaviour when clicked
+		e.preventDefault();
 	}
 	else {
 		// Remove active state for refinement selections and also remove related filter button
