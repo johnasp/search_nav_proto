@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 // Refinments menu buttons system
 	var noOfCats = $(".refinements").children('a').length;
-	for ( var i = 0; i < noOfCats; i++ ) {
+	for ( var i = 0; i <= noOfCats; i++ ) {
 			$( ".category" + [i] ).click(function() {
 				 $ (this).next().slideToggle( "250" );
 				 $ (this).toggleClass( "active" );
