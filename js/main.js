@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
 // Refinments menu buttons system
 	var noOfCats = $(".refinements").children('a').length;
-	for ( var i = 0; i < noOfCats; i++ ) {
+	for ( var i = 0; i <= noOfCats; i++ ) {
 			$( ".category" + [i] ).click(function() {
 				 $ (this).next().slideToggle( "250" );
 				 $ (this).toggleClass( "active" );
@@ -56,11 +56,17 @@ $(".filters").on("click", "a", function() {
 });
 
 
+// SCROLL REFINEMENT HEADER BUTTON TO TOP WHEN CLICKED
+$(".refinements > a").click(function() {
+	var myString = $(this).css("height");
+	var buttonHeight = myString.replace("px", "");
+	buttonHeight + 5;
+	console.log(buttonHeight);
 
-//$(".refinements nav a").click(function() {
-//	var stickyHeight = $("header").height();
-//	$(".refinements").css('margin-top',stickyHeight);
-//});	
+    $('html, body').animate({
+       scrollTop: (($(this).offset().top) - (55))
+    }, 500);
+});
 
 
 

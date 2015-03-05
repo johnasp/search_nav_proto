@@ -286,35 +286,58 @@ table {
   border-spacing: 0;
 }
 
+<<<<<<< HEAD:css/styles.css
 /* line 1, ../sass/partials/_helpers.scss */
+=======
+/* line 3, ../sass/partials/_helpers.scss */
+>>>>>>> gh-pages:css/search-nav.css
 .screen-reader {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
+<<<<<<< HEAD:css/styles.css
 /* line 1, ../sass/partials/_main.scss */
+=======
+/* GLOBAL STYLES */
+/* line 3, ../sass/partials/_global.scss */
+>>>>>>> gh-pages:css/search-nav.css
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
+<<<<<<< HEAD:css/styles.css
 /* line 4, ../sass/partials/_main.scss */
+=======
+/* line 6, ../sass/partials/_global.scss */
+>>>>>>> gh-pages:css/search-nav.css
 a {
   text-decoration: none;
   display: inline-block;
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD:css/styles.css
 /* line 9, ../sass/partials/_main.scss */
 header {
+=======
+/* line 2, ../sass/partials/_refinements.scss */
+.off-canvas header {
+>>>>>>> gh-pages:css/search-nav.css
   position: fixed;
   top: 0;
   width: 100%;
   background: #fff;
   z-index: 999;
 }
+<<<<<<< HEAD:css/styles.css
 /* line 15, ../sass/partials/_main.scss */
 header a {
+=======
+/* line 8, ../sass/partials/_refinements.scss */
+.off-canvas header a {
+>>>>>>> gh-pages:css/search-nav.css
   background: #0199cb;
   border: 6px solid #fff;
   padding: 12px;
@@ -322,8 +345,13 @@ header a {
   text-align: center;
   display: block;
 }
+<<<<<<< HEAD:css/styles.css
 /* line 22, ../sass/partials/_main.scss */
 header a svg {
+=======
+/* line 15, ../sass/partials/_refinements.scss */
+.off-canvas header a svg {
+>>>>>>> gh-pages:css/search-nav.css
   width: 24px;
   fill: #fff;
   -webkit-transform: rotate(180deg);
@@ -332,13 +360,19 @@ header a svg {
   float: left;
   height: 24px;
 }
+<<<<<<< HEAD:css/styles.css
 /* line 31, ../sass/partials/_main.scss */
 header a span {
+=======
+/* line 24, ../sass/partials/_refinements.scss */
+.off-canvas header a span {
+>>>>>>> gh-pages:css/search-nav.css
   color: #fff;
   font-size: 18px;
   font-weight: 600;
 }
 
+<<<<<<< HEAD:css/styles.css
 /* line 39, ../sass/partials/_main.scss */
 .filters {
   padding: 0 6px 0 6px;
@@ -361,11 +395,34 @@ header a span {
   border-radius: 3px;
 }
 /* line 51, ../sass/partials/_main.scss */
+=======
+/* line 32, ../sass/partials/_refinements.scss */
+.filters {
+  padding: 0 6px 0 6px;
+}
+/* line 34, ../sass/partials/_refinements.scss */
+.filters p {
+  margin-bottom: 6px;
+}
+/* line 37, ../sass/partials/_refinements.scss */
+.filters a {
+  display: inline-block;
+  background: #69b55d;
+  padding: 8px 10px;
+  margin: 0 6px 6px 0;
+  position: relative;
+}
+/* line 43, ../sass/partials/_refinements.scss */
+>>>>>>> gh-pages:css/search-nav.css
 .filters a span {
   color: #fff;
   font-size: 14px;
 }
+<<<<<<< HEAD:css/styles.css
 /* line 55, ../sass/partials/_main.scss */
+=======
+/* line 47, ../sass/partials/_refinements.scss */
+>>>>>>> gh-pages:css/search-nav.css
 .filters a svg {
   width: 10px;
   height: 10px;
@@ -375,6 +432,7 @@ header a span {
   top: 1px;
 }
 
+<<<<<<< HEAD:css/styles.css
 /* line 66, ../sass/partials/_main.scss */
 .refinements {
   margin-top: 60px;
@@ -388,13 +446,32 @@ header a span {
   border-bottom: 1px solid #d9d9d9;
 }
 /* line 74, ../sass/partials/_main.scss */
+=======
+/* line 58, ../sass/partials/_refinements.scss */
+.refinements {
+  margin-top: 60px;
+}
+/* line 60, ../sass/partials/_refinements.scss */
+.refinements > a {
+  border-top: 1px solid #d9d9d9;
+}
+/* line 62, ../sass/partials/_refinements.scss */
+.refinements > a:nth-last-child(2) {
+  border-bottom: 1px solid #d9d9d9;
+}
+/* line 66, ../sass/partials/_refinements.scss */
+>>>>>>> gh-pages:css/search-nav.css
 .refinements a {
   padding: 12px;
   width: 100%;
   color: #000;
   text-transform: uppercase;
 }
+<<<<<<< HEAD:css/styles.css
 /* line 80, ../sass/partials/_main.scss */
+=======
+/* line 71, ../sass/partials/_refinements.scss */
+>>>>>>> gh-pages:css/search-nav.css
 .refinements a[class*="category"] svg {
   width: 13px;
   float: right;
@@ -402,31 +479,60 @@ header a span {
   padding-top: 4px;
   height: 20px;
 }
+<<<<<<< HEAD:css/styles.css
 /* line 87, ../sass/partials/_main.scss */
 .refinements a.active {
   font-weight: bold;
 }
 /* line 89, ../sass/partials/_main.scss */
+=======
+/* line 78, ../sass/partials/_refinements.scss */
+.refinements a.active {
+  font-weight: bold;
+  background: #e1e1e1;
+}
+/* line 82, ../sass/partials/_refinements.scss */
+>>>>>>> gh-pages:css/search-nav.css
 .refinements a.active svg {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
+<<<<<<< HEAD:css/styles.css
 /* line 96, ../sass/partials/_main.scss */
 .refinements nav {
   display: none;
 }
 /* line 98, ../sass/partials/_main.scss */
+=======
+/* line 88, ../sass/partials/_refinements.scss */
+.refinements nav {
+  display: none;
+}
+/* line 90, ../sass/partials/_refinements.scss */
+.refinements nav.grid a {
+  width: 49.3%;
+}
+/* line 93, ../sass/partials/_refinements.scss */
+>>>>>>> gh-pages:css/search-nav.css
 .refinements nav a {
   position: relative;
   border-bottom: none;
   text-transform: capitalize;
 }
+<<<<<<< HEAD:css/styles.css
 /* line 102, ../sass/partials/_main.scss */
+=======
+/* line 97, ../sass/partials/_refinements.scss */
+>>>>>>> gh-pages:css/search-nav.css
 .refinements nav a.selected {
   color: #519946;
   background: #ebf5e9;
 }
+<<<<<<< HEAD:css/styles.css
 /* line 106, ../sass/partials/_main.scss */
+=======
+/* line 101, ../sass/partials/_refinements.scss */
+>>>>>>> gh-pages:css/search-nav.css
 .refinements nav a svg {
   fill: #69b55d;
   position: absolute;
@@ -435,3 +541,47 @@ header a span {
   width: 15px;
   height: 18px;
 }
+<<<<<<< HEAD:css/styles.css
+=======
+
+/* line 112, ../sass/partials/_refinements.scss */
+#category2 {
+  display: block;
+}
+
+/* =========================================
+            OFF CANVAS INITIALISERS            
+/* ========================================*/
+/* line 4, ../sass/partials/_off-canvas.scss */
+.site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* line 10, ../sass/partials/_off-canvas.scss */
+.site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+/* =========================================
+=            OFF CANVAS ONLY           =
+/* ========================================*/
+/* line 23, ../sass/partials/_off-canvas.scss */
+.off-canvas .site-menu {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  background: white;
+  padding-top: 0;
+}
+>>>>>>> gh-pages:css/search-nav.css
