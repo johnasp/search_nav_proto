@@ -285,7 +285,7 @@ table {
   border-spacing: 0;
 }
 
-/* line 3, ../sass/partials/_helpers.scss */
+/* line 1, ../sass/partials/_helpers.scss */
 .screen-reader {
   position: absolute;
   top: -9999px;
@@ -306,7 +306,7 @@ a {
 }
 
 /* line 1, ../sass/partials/_refinements.scss */
-.off-canvas header {
+.off-canvas-facets header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -314,7 +314,7 @@ a {
   z-index: 999;
 }
 /* line 7, ../sass/partials/_refinements.scss */
-.off-canvas header a {
+.off-canvas-facets header a {
   background: #0199cb;
   border: 6px solid #fff;
   padding: 12px;
@@ -323,7 +323,7 @@ a {
   display: block;
 }
 /* line 14, ../sass/partials/_refinements.scss */
-.off-canvas header a svg {
+.off-canvas-facets header a svg {
   width: 24px;
   fill: #fff;
   -webkit-transform: rotate(180deg);
@@ -333,7 +333,7 @@ a {
   height: 24px;
 }
 /* line 23, ../sass/partials/_refinements.scss */
-.off-canvas header a span {
+.off-canvas-facets header a span {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
@@ -466,7 +466,7 @@ a {
 =            OFF CANVAS ONLY           =
 /* ========================================*/
 /* line 23, ../sass/partials/_off-canvas.scss */
-.off-canvas .site-menu {
+.off-canvas-facets .site-menu {
   z-index: 1;
   width: 100%;
   height: 100%;
