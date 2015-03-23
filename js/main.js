@@ -32,7 +32,6 @@ $(".refinements nav a").click(function() {
 		$(this).attr("id",("label-" + uniqueID));
 		// Make filters element visible if it has anchor children
 		var totalAnchors = $(".filters a").length;
-		console.log ("There are " + totalAnchors + " anchors");
 		if (totalAnchors === 1) {
 			$(".refinements").css('margin-top',0);
 			$(".filters").css('margin-top',60);
@@ -58,13 +57,8 @@ $(".filters").on("click", "a", function() {
 
 // SCROLL REFINEMENT HEADER BUTTON TO TOP WHEN CLICKED
 $(".refinements > a").click(function() {
-	var myString = $(this).css("height");
-	var buttonHeight = myString.replace("px", "");
-	buttonHeight + 5;
-	console.log(buttonHeight);
-
     $('html, body').animate({
-       scrollTop: (($(this).offset().top) - (55))
+       scrollTop: (($(this).offset().top) - (60))
     }, 500);
 });
 
