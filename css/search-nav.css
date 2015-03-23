@@ -402,31 +402,31 @@ a {
   font-weight: bold;
   background: #e1e1e1;
 }
-/* line 81, ../sass/partials/_refinements.scss */
-.refinements a.active svg {
+/* line 80, ../sass/partials/_refinements.scss */
+.refinements a.active svg.arrow {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
-/* line 87, ../sass/partials/_refinements.scss */
+/* line 86, ../sass/partials/_refinements.scss */
 .refinements nav {
   display: none;
 }
-/* line 89, ../sass/partials/_refinements.scss */
+/* line 88, ../sass/partials/_refinements.scss */
 .refinements nav.grid a {
   width: 49.3%;
 }
-/* line 92, ../sass/partials/_refinements.scss */
+/* line 91, ../sass/partials/_refinements.scss */
 .refinements nav a {
   position: relative;
   border-bottom: none;
   text-transform: capitalize;
 }
-/* line 96, ../sass/partials/_refinements.scss */
+/* line 95, ../sass/partials/_refinements.scss */
 .refinements nav a.selected {
   color: #519946;
   background: #ebf5e9;
 }
-/* line 100, ../sass/partials/_refinements.scss */
+/* line 99, ../sass/partials/_refinements.scss */
 .refinements nav a svg {
   fill: #69b55d;
   position: absolute;
@@ -434,11 +434,6 @@ a {
   right: 13px;
   width: 15px;
   height: 18px;
-}
-
-/* line 111, ../sass/partials/_refinements.scss */
-#category2 {
-  display: block;
 }
 
 /* =========================================

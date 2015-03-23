@@ -76,9 +76,8 @@
 		}
 		&.active {
 			font-weight: bold;
-					background: #e1e1e1;
-
-			svg {
+			background: #e1e1e1;
+			svg.arrow { 
 				transform: rotate(90deg);
 				-webkit-transform: rotate(90deg);
 			}
@@ -105,10 +104,8 @@
 				width: 15px;
 				height: 18px;
 			}
+
 		}
 	}
 }
-	#category2 {
-		display: block;
-	}
 
