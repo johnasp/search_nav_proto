@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
-// Refinments menu buttons system
-	var noOfCats = $(".refinements").children('a').length;
+// MENU SYSTEM
+	var noOfCats = $(".categories").children('a').length;
 	for ( var i = 0; i <= noOfCats; i++ ) {
 			$( ".category" + [i] ).click(function() {
 				 $ (this).next().slideToggle( "250" );
@@ -11,9 +11,8 @@ $( document ).ready(function() {
 	}
 });
 
-
-// Adding and removing refinment button
-$(".refinements nav a").click(function() {
+// BUTTON SYSTEM
+$(".categories nav a").click(function() {
 	// Strip product count and brackets from text to generate unique ID 
 	var filterText = $(this).text();
 	var n=filterText.indexOf("(");
@@ -33,15 +32,13 @@ $(".refinements nav a").click(function() {
 		// Make filters element visible if it has anchor children
 		var totalAnchors = $(".filters a").length;
 		if (totalAnchors === 1) {
-			$(".refinements").css('margin-top',0);
-			$(".filters").css('margin-top',60);
-		}
-
-	}
+			$(".categories").css('margin-top',0);
+			$(".filters").css('margin-top',55);
+		}	}
 	else {
 		// Remove active state for refinement selections and also remove related filter button
 		$(this).removeClass("selected");
-		$(".refinements #label-" + uniqueID + " svg").remove();
+		$(".categories #label-" + uniqueID + " svg").remove();
 		$(".filters #label-" + uniqueID).remove();
 	}
 });
@@ -50,17 +47,25 @@ $(".refinements nav a").click(function() {
 $(".filters").on("click", "a", function() {
 	$(this).remove();
 	var idTag = $(this).attr("id");
-	$(".refinements nav a#" + idTag).removeClass("selected");
-	$(".refinements nav a#" + idTag + " svg").remove();
+	$(".categories nav a#" + idTag).removeClass("selected");
+	$(".categories nav a#" + idTag + " svg").remove();
 });
 
-
 // SCROLL REFINEMENT HEADER BUTTON TO TOP WHEN CLICKED
-$(".refinements > a").click(function() {
+$(".categories > a").click(function() {
     $('html, body').animate({
        scrollTop: (($(this).offset().top) - (60))
     }, 500);
 });
 
+// CLOSE RIGHT SIDE OFF CANVAS
+$(".site-refinements header a").click(function() {
+	$(".site-wrapper").toggleClass('show-right') 
+});
+
+// SHOW RIGHT SIDE OFF CANVAS
+$(".filter").click(function() {
+	$(".site-wrapper").toggleClass('show-right') 
+});
 
 

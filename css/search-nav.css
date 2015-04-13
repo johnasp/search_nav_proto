@@ -1,27 +1,22 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
-/* line 6, ../sass/partials/_normalize.scss */
 html {
   box-sizing: border-box;
 }
 
-/* line 9, ../sass/partials/_normalize.scss */
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/* line 13, ../sass/partials/_normalize.scss */
 html {
   height: 100%;
   /* Allow DIVs to set with relative height */
 }
 
-/* line 17, ../sass/partials/_normalize.scss */
 body, .main-nav {
   height: 100%;
 }
 
 /* Allow DIVs to set with relative height */
-/* line 19, ../sass/partials/_normalize.scss */
 .clearfix:after {
   content: "";
   display: table;
@@ -34,7 +29,6 @@ body, .main-nav {
 /*
  * Corrects `block` display not defined in IE 8/9.
  */
-/* line 43, ../sass/partials/_normalize.scss */
 article,
 aside,
 details,
@@ -52,7 +46,6 @@ summary {
 /*
  * Corrects `inline-block` display not defined in IE 8/9.
  */
-/* line 53, ../sass/partials/_normalize.scss */
 audio,
 canvas,
 video {
@@ -63,7 +56,6 @@ video {
  * Prevents modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 62, ../sass/partials/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -72,7 +64,6 @@ audio:not([controls]) {
 /*
  * Addresses styling for `hidden` attribute not present in IE 8/9.
  */
-/* line 71, ../sass/partials/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -85,7 +76,6 @@ audio:not([controls]) {
  * 2. Prevents iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 85, ../sass/partials/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -98,7 +88,6 @@ html {
 /*
  * Removes default margin.
  */
-/* line 95, ../sass/partials/_normalize.scss */
 body {
   margin: 0;
 }
@@ -109,7 +98,6 @@ body {
 /*
  * Removes border when inside `a` element in IE 8/9.
  */
-/* line 109, ../sass/partials/_normalize.scss */
 img {
   border: 0;
 }
@@ -117,7 +105,6 @@ img {
 /*
  * Corrects overflow displayed oddly in IE 9.
  */
-/* line 117, ../sass/partials/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -128,7 +115,6 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE 8/9 and Safari 5.
  */
-/* line 129, ../sass/partials/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -139,7 +125,6 @@ figure {
 /*
  * Define consistent border, margin, and padding.
  */
-/* line 141, ../sass/partials/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -150,7 +135,6 @@ fieldset {
  * 1. Corrects color not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 152, ../sass/partials/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -163,7 +147,6 @@ legend {
  * 2. Corrects font size not being inherited in all browsers.
  * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
  */
-/* line 166, ../sass/partials/_normalize.scss */
 button,
 input,
 select,
@@ -180,7 +163,6 @@ textarea {
  * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 178, ../sass/partials/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -193,7 +175,6 @@ input {
  * 3. Improves usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 193, ../sass/partials/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -207,7 +188,6 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 203, ../sass/partials/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -217,7 +197,6 @@ input[disabled] {
  * 1. Addresses box sizing set to `content-box` in IE 8/9.
  * 2. Removes excess padding in IE 8/9.
  */
-/* line 213, ../sass/partials/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -231,7 +210,6 @@ input[type="radio"] {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 224, ../sass/partials/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -245,7 +223,6 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 237, ../sass/partials/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -254,7 +231,6 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in Firefox 4+.
  */
-/* line 246, ../sass/partials/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -265,7 +241,6 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE 8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-/* line 256, ../sass/partials/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -279,174 +254,53 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
-/* line 269, ../sass/partials/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 1, ../sass/partials/_helpers.scss */
-.screen-reader {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
-/* GLOBAL STYLES */
-/* line 3, ../sass/partials/_global.scss */
+/* =========================================
+             VARS            
+/* ========================================*/
+/* =========================================
+             GLOBAL STYLES           
+/* ========================================*/
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* line 6, ../sass/partials/_global.scss */
 a {
   text-decoration: none;
   display: inline-block;
   box-sizing: border-box;
 }
 
-/* line 1, ../sass/partials/_refinements.scss */
-.off-canvas-facets header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #fff;
-  z-index: 999;
-}
-/* line 7, ../sass/partials/_refinements.scss */
-.off-canvas-facets header a {
-  background: #0199cb;
-  border: 6px solid #fff;
-  padding: 12px;
-  width: 100%;
-  text-align: center;
-  display: block;
-}
-/* line 14, ../sass/partials/_refinements.scss */
-.off-canvas-facets header a svg {
-  width: 24px;
-  fill: #fff;
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-  vertical-align: middle;
-  float: left;
-  height: 24px;
-}
-/* line 23, ../sass/partials/_refinements.scss */
-.off-canvas-facets header a span {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-}
-
-/* line 31, ../sass/partials/_refinements.scss */
-.filters {
-  padding: 0 6px 0 6px;
-}
-/* line 33, ../sass/partials/_refinements.scss */
-.filters p {
-  margin-bottom: 6px;
-}
-/* line 36, ../sass/partials/_refinements.scss */
-.filters a {
-  display: inline-block;
-  background: #69b55d;
-  padding: 8px 10px;
-  margin: 0 6px 6px 0;
-  position: relative;
-}
-/* line 42, ../sass/partials/_refinements.scss */
-.filters a span {
-  color: #fff;
-  font-size: 14px;
-}
-/* line 46, ../sass/partials/_refinements.scss */
-.filters a svg {
-  width: 10px;
-  height: 10px;
-  fill: #fff;
+.screen-reader {
   position: absolute;
-  right: 1px;
-  top: 1px;
-}
-
-/* line 57, ../sass/partials/_refinements.scss */
-.refinements {
-  margin-top: 60px;
-}
-/* line 59, ../sass/partials/_refinements.scss */
-.refinements > a {
-  border-top: 1px solid #d9d9d9;
-}
-/* line 61, ../sass/partials/_refinements.scss */
-.refinements > a:nth-last-child(2) {
-  border-bottom: 1px solid #d9d9d9;
-}
-/* line 65, ../sass/partials/_refinements.scss */
-.refinements a {
-  padding: 12px;
-  width: 100%;
-  color: #000;
-  text-transform: uppercase;
-}
-/* line 70, ../sass/partials/_refinements.scss */
-.refinements a[class*="category"] svg {
-  width: 13px;
-  float: right;
-  fill: #333;
-  padding-top: 4px;
-  height: 20px;
-}
-/* line 77, ../sass/partials/_refinements.scss */
-.refinements a.active {
-  font-weight: bold;
-  background: #e1e1e1;
-}
-/* line 80, ../sass/partials/_refinements.scss */
-.refinements a.active svg.arrow {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-}
-/* line 86, ../sass/partials/_refinements.scss */
-.refinements nav {
-  display: none;
-}
-/* line 88, ../sass/partials/_refinements.scss */
-.refinements nav.grid a {
-  width: 49.3%;
-}
-/* line 91, ../sass/partials/_refinements.scss */
-.refinements nav a {
-  position: relative;
-  border-bottom: none;
-  text-transform: capitalize;
-}
-/* line 95, ../sass/partials/_refinements.scss */
-.refinements nav a.selected {
-  color: #519946;
-  background: #ebf5e9;
-}
-/* line 99, ../sass/partials/_refinements.scss */
-.refinements nav a svg {
-  fill: #69b55d;
-  position: absolute;
-  top: 15px;
-  right: 13px;
-  width: 15px;
-  height: 18px;
+  top: -9999px;
+  left: -9999px;
 }
 
 /* =========================================
-            OFF CANVAS INITIALISERS            
+             OFF CANVAS INITIALISERS            
 /* ========================================*/
-/* line 4, ../sass/partials/_off-canvas.scss */
 .site-wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
+  height: 2000px;
 }
 
-/* line 10, ../sass/partials/_off-canvas.scss */
+.site-refinements {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  background: white;
+}
+
 .site-canvas {
   width: 100%;
   height: 100%;
@@ -457,17 +311,229 @@ a {
   transition: .3s ease all;
 }
 
+.site-wrapper.show-right .site-canvas {
+  transform: translateX(-100%);
+}
+
+p.clickme {
+  padding: 12px;
+  background: red;
+  color: white;
+  margin-top: 0;
+}
+
 /* =========================================
-=            OFF CANVAS ONLY           =
+             HEADER           
 /* ========================================*/
-/* line 23, ../sass/partials/_off-canvas.scss */
-.off-canvas-facets .site-menu {
-  z-index: 1;
+header.main {
+  font-size: 0;
+  position: relative;
+}
+header.main div {
+  border-right: 1px solid #d1d1d1;
+  display: inline-block;
+  width: 12.5%;
+}
+header.main div:last-child {
+  border: none;
+}
+header.main svg {
+  height: 38px;
+  margin: 0 auto;
+  display: block;
+}
+header.main .logo {
+  width: 50%;
+}
+header.main .logo svg {
   width: 100%;
-  height: 100%;
+  display: inline-block;
+}
+header.main .logo .checkout svg {
+  height: 48px;
+}
+
+nav.breadcrumb {
+  background: #d1d1d1;
+  padding: 5px 5px 5px 10px;
+  border-bottom: 1px solid #d1d1d1;
+}
+nav.breadcrumb span {
+  color: #6b6b6b;
+}
+
+/* =========================================
+             REFINE CONTROLS          
+/* ========================================*/
+.refine-controls {
+  position: relative;
+  padding: 6px;
+}
+.refine-controls .fixed-col {
   position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 86px;
+  height: 40px;
+  border: 1px solid black;
+  padding: 3px 0 0 5px;
+}
+.refine-controls .fixed-col a {
+  display: inline-block;
+  height: 34px;
+}
+.refine-controls .fixed-col svg {
+  height: 36px;
+  width: 36px;
+}
+.refine-controls .fluid-col {
+  margin-left: 86px;
+  display: block;
+  position: relative;
   top: 0;
-  left: -300px;
-  background: white;
-  padding-top: 0;
+  overflow: hidden;
+}
+.refine-controls .fluid-col section {
+  width: 50%;
+  float: left;
+  padding-left: 6px;
+}
+.refine-controls .fluid-col section.filter svg {
+  height: 15px;
+}
+.refine-controls .fluid-col section a {
+  display: block;
+  border: 1px solid #000;
+  height: 40px;
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+.refine-controls .fluid-col section a span {
+  margin-top: 10px;
+  display: inline-block;
+}
+.refine-controls .fluid-col section a svg {
+  height: 20px;
+  position: absolute;
+  right: 3px;
+  top: 10px;
+}
+
+/* =========================================
+             REFINEMENTS MENU
+/* ========================================*/
+.site-refinements
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 999;
+}
+.site-refinements
+header a {
+  background: #0199cb;
+  border: 6px solid #fff;
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+.site-refinements
+header a svg {
+  width: 24px;
+  fill: #fff;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  vertical-align: middle;
+  float: left;
+  height: 24px;
+}
+.site-refinements
+header a span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.filters {
+  padding: 0 6px 0 6px;
+}
+.filters p {
+  margin-bottom: 6px;
+}
+.filters a {
+  display: inline-block;
+  background: #69b55d;
+  padding: 8px 10px;
+  margin: 0 6px 6px 0;
+  position: relative;
+}
+.filters a span {
+  color: #fff;
+  font-size: 14px;
+}
+.filters a svg {
+  width: 10px;
+  height: 10px;
+  fill: #fff;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+}
+
+.categories {
+  margin-top: 60px;
+}
+.categories > a {
+  border-top: 1px solid #d1d1d1;
+}
+.categories > a:nth-last-child(2) {
+  border-bottom: 1px solid #d1d1d1;
+}
+.categories a {
+  padding: 12px;
+  width: 100%;
+  color: #000;
+  text-transform: uppercase;
+}
+.categories a[class*="category"] svg {
+  width: 13px;
+  float: right;
+  fill: #333;
+  padding-top: 4px;
+  height: 20px;
+}
+.categories a.active {
+  font-weight: bold;
+  background: #e1e1e1;
+}
+.categories a.active svg:last-child {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+.categories nav {
+  display: none;
+}
+.categories nav.grid a {
+  width: 49.3%;
+}
+.categories nav a {
+  position: relative;
+  border-bottom: none;
+  text-transform: capitalize;
+}
+.categories nav a.selected {
+  color: #519946;
+  background: #ebf5e9;
+}
+.categories nav a svg {
+  fill: #69b55d;
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  width: 15px;
+  height: 18px;
 }
