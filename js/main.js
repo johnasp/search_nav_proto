@@ -51,7 +51,6 @@ $(".filters").on("click", "a", function() {
 	$(".categories nav a#" + idTag + " svg").remove();
 });
 
-
 // SCROLL REFINEMENT HEADER BUTTON TO TOP WHEN CLICKED
 $(".categories > a").click(function() {
     $('html, body').animate({
@@ -59,11 +58,13 @@ $(".categories > a").click(function() {
     }, 500);
 });
 
+// CLOSE RIGHT SIDE OFF CANVAS
 $(".site-refinements header a").click(function() {
 	$(".site-wrapper").toggleClass('show-right') 
 });
 
-$(".clickme").click(function() {
+// SHOW RIGHT SIDE OFF CANVAS
+$(".filter").click(function() {
 	$(".site-wrapper").toggleClass('show-right') 
 });
 

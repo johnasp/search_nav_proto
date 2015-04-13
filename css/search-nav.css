@@ -288,7 +288,6 @@ a {
   position: relative;
   overflow: hidden;
   width: 100%;
-  border: 1px solid red;
   height: 2000px;
 }
 
@@ -321,6 +320,105 @@ p.clickme {
   background: red;
   color: white;
   margin-top: 0;
+}
+
+/* =========================================
+             HEADER           
+/* ========================================*/
+header.main {
+  font-size: 0;
+  position: relative;
+}
+header.main div {
+  border-right: 1px solid #d1d1d1;
+  display: inline-block;
+  width: 12.5%;
+}
+header.main div:last-child {
+  border: none;
+}
+header.main svg {
+  height: 38px;
+  margin: 0 auto;
+  display: block;
+}
+header.main .logo {
+  width: 50%;
+}
+header.main .logo svg {
+  width: 100%;
+  display: inline-block;
+}
+header.main .logo .checkout svg {
+  height: 48px;
+}
+
+nav.breadcrumb {
+  background: #d1d1d1;
+  padding: 5px 5px 5px 10px;
+  border-bottom: 1px solid #d1d1d1;
+}
+nav.breadcrumb span {
+  color: #6b6b6b;
+}
+
+/* =========================================
+             REFINE CONTROLS          
+/* ========================================*/
+.refine-controls {
+  position: relative;
+  padding: 6px;
+}
+.refine-controls .fixed-col {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 86px;
+  height: 40px;
+  border: 1px solid black;
+  padding: 3px 0 0 5px;
+}
+.refine-controls .fixed-col a {
+  display: inline-block;
+  height: 34px;
+}
+.refine-controls .fixed-col svg {
+  height: 36px;
+  width: 36px;
+}
+.refine-controls .fluid-col {
+  margin-left: 86px;
+  display: block;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+}
+.refine-controls .fluid-col section {
+  width: 50%;
+  float: left;
+  padding-left: 6px;
+}
+.refine-controls .fluid-col section.filter svg {
+  height: 15px;
+}
+.refine-controls .fluid-col section a {
+  display: block;
+  border: 1px solid #000;
+  height: 40px;
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+.refine-controls .fluid-col section a span {
+  margin-top: 10px;
+  display: inline-block;
+}
+.refine-controls .fluid-col section a svg {
+  height: 20px;
+  position: absolute;
+  right: 3px;
+  top: 10px;
 }
 
 /* =========================================
@@ -390,10 +488,10 @@ header a span {
   margin-top: 60px;
 }
 .categories > a {
-  border-top: 1px solid #d9d9d9;
+  border-top: 1px solid #d1d1d1;
 }
 .categories > a:nth-last-child(2) {
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d1d1d1;
 }
 .categories a {
   padding: 12px;
