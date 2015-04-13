@@ -1,0 +1,57 @@
+/* =========================================
+             REFINE CONTROLS          
+/* ========================================*/
+
+.refine-controls {
+  position: relative;  
+  padding: 6px;
+  .fixed-col {
+    position: absolute;  
+    top: 6px;
+    left: 6px;
+    width: 86px;    
+    height: 40px;
+    border: 1px solid black;
+    padding: 3px 0 0 5px;   
+    a {
+      display: inline-block;
+      height: 34px;
+    }
+    svg { 
+      height: 36px; 
+      width: 36px;
+    }
+  }
+  .fluid-col { 
+    margin-left: 86px;   
+    display: block;
+    position: relative; 
+    top: 0;
+    overflow: hidden;
+    section {
+      width: 50%;
+      float: left;
+      padding-left: 6px;
+      &.filter svg {height:15px;} 
+      a {
+        display: block;
+        border: 1px solid #000;
+        height: 40px;
+        position: relative;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        span {
+          margin-top: 10px; 
+          display: inline-block;
+        }
+        svg {
+          height: 20px;
+          position: absolute;
+          right: 3px;
+          top: 10px;
+        }
+      }
+    }
+  }  
+}
