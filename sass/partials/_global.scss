@@ -36,15 +36,6 @@ a {
   width: 100%;
   height: 2000px;
 }
-.site-refinements {
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: -100%;
-  background: white;
-}
 .site-canvas {
   width: 100%;
   height: 100%;
@@ -54,12 +45,28 @@ a {
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
 }
+.site-menu {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: white;
+}
+.site-refinements {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  background: white;
+}
 .site-wrapper.show-right .site-canvas {
   transform: translateX(-100%);
 }
-p.clickme {
-  padding: 12px;
-  background: red;
-  color: white;
-  margin-top: 0;
+.site-wrapper.show-left .site-canvas {
+  transform: translateX(100%);
 }
+

@@ -1,0 +1,32 @@
+/* =========================================
+             SITE MENU          
+/* ========================================*/
+
+.site-menu {
+  header {
+    background: black;
+    position: relative;
+    height: 42px;
+    margin: 6px;
+      span {
+        color: #fff;
+        position: absolute;
+        top: 9px;
+        left: 10px;
+      }
+      svg {
+        fill: white;
+        position: absolute;
+        height: 22px;
+        right: 5px;
+        top: 10px;
+      }       
+  }
+  img {
+    max-width: 100%;
+  }
+  .categories {
+    margin-top: 0;
+  }
+}
+
