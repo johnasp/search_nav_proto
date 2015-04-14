@@ -8,11 +8,12 @@ $divider: $breadCrumbBG;
 header.main {
   font-size: 0;
   position: relative;
-  div {
+  a {
     border-right: 1px solid $divider;
     display: inline-block;
     width: 12.5%;
     &:last-child {border: none;}
+    cursor: pointer;
   }
   svg {
     height: 38px; 

@@ -336,12 +336,13 @@ header.main {
   font-size: 0;
   position: relative;
 }
-header.main div {
+header.main a {
   border-right: 1px solid #d1d1d1;
   display: inline-block;
   width: 12.5%;
+  cursor: pointer;
 }
-header.main div:last-child {
+header.main a:last-child {
   border: none;
 }
 header.main svg {
@@ -553,6 +554,7 @@ header a span {
   position: relative;
   height: 42px;
   margin: 6px;
+  box-sizing: border-box;
 }
 .site-menu header span {
   color: #fff;
