@@ -58,14 +58,26 @@ $(".categories > a").click(function() {
     }, 500);
 });
 
-// CLOSE RIGHT SIDE OFF CANVAS
-$(".site-refinements header a").click(function() {
-	$(".site-wrapper").toggleClass('show-right') 
+// SHOW LEFT SIDE OFF CANVAS
+$(".menu").click(function() {
+	$(".site-wrapper").toggleClass('show-left') 
+});
+
+// CLOSE LEFT SIDE OFF CANVAS
+$(".site-menu header").click(function() {
+	$(".site-wrapper").toggleClass('show-left') 
 });
 
 // SHOW RIGHT SIDE OFF CANVAS
 $(".filter").click(function() {
 	$(".site-wrapper").toggleClass('show-right') 
 });
+
+// CLOSE RIGHT SIDE OFF CANVAS
+$(".site-refinements header a").click(function() {
+	$(".site-wrapper").toggleClass('show-right') 
+});
+
+
 
 
