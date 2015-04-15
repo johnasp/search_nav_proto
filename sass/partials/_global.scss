@@ -64,9 +64,11 @@ a {
   background: white;
 }
 .site-wrapper.show-right .site-canvas {
+  -webkit-transform: translateX(-100%);  
   transform: translateX(-100%);
 }
 .site-wrapper.show-left .site-canvas {
+  -webkit-transform: translateX(100%);
   transform: translateX(100%);
 }
 

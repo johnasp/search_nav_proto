@@ -58,19 +58,21 @@ $(".categories > a").click(function() {
     }, 500);
 });
 
-
-
-// CLOSE LEFT SIDE OFF CANVAS
+// OPEN LEFT OFF CANVAS
+$(".burger-menu").click(function(){
+    $(".site-wrapper").toggleClass("show-left");
+});
+// CLOSE LEFT OFF CANVAS
 $(".site-menu header").click(function() {
 	$(".site-wrapper").toggleClass('show-left') 
 });
 
-// SHOW RIGHT SIDE OFF CANVAS
+// SHOW RIGHT OFF CANVAS
 $(".filter").click(function() {
 	$(".site-wrapper").toggleClass('show-right') 
 });
 
-// CLOSE RIGHT SIDE OFF CANVAS
+// CLOSE RIGHT OFF CANVAS
 $(".site-refinements header a").click(function() {
 	$(".site-wrapper").toggleClass('show-right') 
 });
