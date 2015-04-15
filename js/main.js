@@ -58,10 +58,7 @@ $(".categories > a").click(function() {
     }, 500);
 });
 
-// SHOW LEFT SIDE OFF CANVAS
-$(".menu").click(function() {
-	$(".site-wrapper").toggleClass('show-left') 
-});
+
 
 // CLOSE LEFT SIDE OFF CANVAS
 $(".site-menu header").click(function() {

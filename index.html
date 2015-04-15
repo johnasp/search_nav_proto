@@ -7,13 +7,25 @@
 	<meta name="viewport" content="width=device-width"> 
 	<link rel="stylesheet" href="css/search-nav.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
+
 <body> 
+
+<script>
+$(document).ready(function(){ 
+    $(".menu").click(function(){
+        $(".site-wrapper").toggleClass("show-left");
+        console.log("Im logging");
+    });
+});
+</script>
+
 
 <div class="site-wrapper">
   <div class="site-canvas">
     <header class="main"> 
-      <a class="menu" onclick="">
+      <a class="menu">
         <svg viewBox="0 0 512 512"><use xlink:href="#menu"></use></svg> 
       </a>
       <a class="search">
@@ -319,8 +331,8 @@ ttwNeedNeed
       </defs>
 </svg>
 
-<script src="js/jquery.min.js"></script>  
+
 <script src="js/main.js"></script>
 
-</body>
+</body>fa
 </html>
