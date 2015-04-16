@@ -33,7 +33,7 @@ $(".categories nav a").click(function() {
 		var totalAnchors = $(".filters a").length;
 		if (totalAnchors === 1) {
 			$(".categories").css('margin-top',0);
-			$(".filters").css('margin-top',55);
+			$(".filters").css('margin-top',6); //edit this if using a fixed header
 		}	}
 	else {
 		// Remove active state for refinement selections and also remove related filter button
@@ -54,7 +54,7 @@ $(".filters").on("click", "a", function() {
 // SCROLL REFINEMENT HEADER BUTTON TO TOP WHEN CLICKED
 $(".categories > a").click(function() {
     $('html, body').animate({
-       scrollTop: (($(this).offset().top) - (60))
+       scrollTop: (($(this).offset().top) - (30))
     }, 500);
 });
 

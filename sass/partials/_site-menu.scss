@@ -6,28 +6,32 @@
   header {
     background: black;
     position: relative;
-    height: 42px;
-    margin: 6px;
+    height: 48px;
     box-sizing: border-box;
       span {
         color: #fff;
         position: absolute;
-        top: 9px;
+        top: 13px;
         left: 10px;
       }
       svg {
         fill: white;
         position: absolute;
         height: 22px;
-        right: 5px;
-        top: 10px;
+        right: 10px;
+        top: 13px;
       }       
   }
   img {
     max-width: 100%;
   }
   .categories {
+    position: relative;
     margin-top: 0;
+    top: -5px;
+    a:first-child {
+      border-top: none;
+    }
   }
 }
 

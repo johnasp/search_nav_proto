@@ -4,14 +4,12 @@
     
 .site-refinements
 	header {
-	  position: fixed;
 	  top: 0; 
 	  width: 100%;
 	  background: #fff; 
 	  z-index: 999;
 	 	a {
 		  background: $cta;
-		  border: 6px solid #fff;
 		  padding: $padding;
 			width: 100%;
 			text-align: center;
@@ -32,7 +30,7 @@
 			}
 	}	
 }
-.filters {
+.site-refinements .filters {
 	padding: 0 $gutter 0 $gutter;
 	p {
 		margin-bottom: 6px;
@@ -58,58 +56,4 @@
 	}
 }
 
-.categories {
-	margin-top: 60px;
-	> a {
-		border-top: 1px solid $divider;
-		&:nth-last-child(2) {
-			border-bottom: 1px solid $divider;
-		}
-	}
-	a {
-		padding: $padding;
-		width: 100%;
-		color: #000;
-		text-transform: uppercase;
-		&[class*="category"] svg {
-			width: 13px;
-			float: right;
-			fill: #333;
-			padding-top: 4px;
-			height: 20px;
-		}
-		&.active {
-			font-weight: bold;
-			background: #e1e1e1;
-			svg:last-child { 
-				transform: rotate(90deg);
-				-webkit-transform: rotate(90deg);
-			}
-		}
-	}
-	nav {
-		display: none;
-		&.grid a {
-			width: 49.3%;
-		}
-		a {
-			position: relative;
-			border-bottom: none;
-			text-transform: capitalize;
-			&.selected {
-				color: darken($filter-but, 10%);
-				background: lighten($filter-but,40%);
-			}
-			svg {
-				fill: $filter-but;
-				position: absolute;
-				top: 15px;
-				right: 13px;
-				width: 15px;
-				height: 18px;
-			}
-
-		}
-	}
-}
 

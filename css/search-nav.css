@@ -289,6 +289,7 @@ a {
   overflow: hidden;
   width: 100%;
   height: 2000px;
+  /* For proto only, remove on production */
 }
 
 .site-canvas {
@@ -329,6 +330,60 @@ a {
 .site-wrapper.show-left .site-canvas {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
+}
+
+/* =========================================
+             CATEGORIES LISTS           
+/* ========================================*/
+.categories > a {
+  border-top: 1px solid #d9d9d9;
+}
+.categories > a:nth-last-child(2) {
+  border-bottom: 1px solid #d9d9d9;
+}
+.categories a {
+  padding: 12px;
+  width: 100%;
+  color: #000;
+  text-transform: uppercase;
+}
+.categories a[class*="category"] svg {
+  width: 13px;
+  float: right;
+  fill: #333;
+  padding-top: 4px;
+  height: 20px;
+}
+.categories a.active {
+  font-weight: bold;
+  background: #e1e1e1;
+}
+.categories a.active svg:last-child {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+}
+.categories nav {
+  display: none;
+}
+.categories nav.grid a {
+  width: 49.3%;
+}
+.categories nav a {
+  position: relative;
+  border-bottom: none;
+  text-transform: capitalize;
+}
+.categories nav a.selected {
+  color: #519946;
+  background: #ebf5e9;
+}
+.categories nav a svg {
+  fill: #69b55d;
+  position: absolute;
+  top: 15px;
+  right: 13px;
+  width: 15px;
+  height: 18px;
 }
 
 /* =========================================
@@ -436,7 +491,6 @@ nav.breadcrumb span {
 /* ========================================*/
 .site-refinements
 header {
-  position: fixed;
   top: 0;
   width: 100%;
   background: #fff;
@@ -445,7 +499,6 @@ header {
 .site-refinements
 header a {
   background: #0199cb;
-  border: 6px solid #fff;
   padding: 12px;
   width: 100%;
   text-align: center;
@@ -468,24 +521,24 @@ header a span {
   font-weight: 600;
 }
 
-.filters {
+.site-refinements .filters {
   padding: 0 6px 0 6px;
 }
-.filters p {
+.site-refinements .filters p {
   margin-bottom: 6px;
 }
-.filters a {
+.site-refinements .filters a {
   display: inline-block;
   background: #69b55d;
   padding: 8px 10px;
   margin: 0 6px 6px 0;
   position: relative;
 }
-.filters a span {
+.site-refinements .filters a span {
   color: #fff;
   font-size: 14px;
 }
-.filters a svg {
+.site-refinements .filters a svg {
   width: 10px;
   height: 10px;
   fill: #fff;
@@ -494,86 +547,36 @@ header a span {
   top: 1px;
 }
 
-.categories {
-  margin-top: 60px;
-}
-.categories > a {
-  border-top: 1px solid #d1d1d1;
-}
-.categories > a:nth-last-child(2) {
-  border-bottom: 1px solid #d1d1d1;
-}
-.categories a {
-  padding: 12px;
-  width: 100%;
-  color: #000;
-  text-transform: uppercase;
-}
-.categories a[class*="category"] svg {
-  width: 13px;
-  float: right;
-  fill: #333;
-  padding-top: 4px;
-  height: 20px;
-}
-.categories a.active {
-  font-weight: bold;
-  background: #e1e1e1;
-}
-.categories a.active svg:last-child {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-}
-.categories nav {
-  display: none;
-}
-.categories nav.grid a {
-  width: 49.3%;
-}
-.categories nav a {
-  position: relative;
-  border-bottom: none;
-  text-transform: capitalize;
-}
-.categories nav a.selected {
-  color: #519946;
-  background: #ebf5e9;
-}
-.categories nav a svg {
-  fill: #69b55d;
-  position: absolute;
-  top: 15px;
-  right: 13px;
-  width: 15px;
-  height: 18px;
-}
-
 /* =========================================
              SITE MENU          
 /* ========================================*/
 .site-menu header {
   background: black;
   position: relative;
-  height: 42px;
-  margin: 6px;
+  height: 48px;
   box-sizing: border-box;
 }
 .site-menu header span {
   color: #fff;
   position: absolute;
-  top: 9px;
+  top: 13px;
   left: 10px;
 }
 .site-menu header svg {
   fill: white;
   position: absolute;
   height: 22px;
-  right: 5px;
-  top: 10px;
+  right: 10px;
+  top: 13px;
 }
 .site-menu img {
   max-width: 100%;
 }
 .site-menu .categories {
+  position: relative;
   margin-top: 0;
+  top: -5px;
+}
+.site-menu .categories a:first-child {
+  border-top: none;
 }
