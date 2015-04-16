@@ -281,6 +281,9 @@ a {
   left: -9999px;
 }
 
+.content {
+  padding: 0 6px;
+}
 .content div {
   margin-bottom: 12px;
 }

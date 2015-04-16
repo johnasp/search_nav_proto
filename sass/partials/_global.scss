@@ -25,7 +25,10 @@ a {
   top: -9999px;
   left: -9999px;
 }
-.content div {margin-bottom: 12px;}
+.content {
+  padding: 0 6px;
+  div {margin-bottom: 12px;}
+}
 /* =========================================
              OFF CANVAS INITIALISERS            
 /* ========================================*/
