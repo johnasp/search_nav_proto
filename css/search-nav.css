@@ -490,7 +490,7 @@ nav.breadcrumb span {
 .refine-controls .fluid-col section a svg {
   height: 20px;
   position: absolute;
-  right: 0%;
+  right: 3px !important;
   top: 10px;
 }
 
