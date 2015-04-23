@@ -34,6 +34,7 @@ header.main {
 nav.breadcrumb {
   background: lighten($breadCrumbBG,10%);
   padding: 5px 5px 5px 10px;
+  border-top: 1px solid $breadCrumbBG;
   border-bottom: 1px solid $breadCrumbBG;
   span {
     color: darken($breadCrumbBG,40%);

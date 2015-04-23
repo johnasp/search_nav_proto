@@ -428,6 +428,7 @@ header.main .logo .checkout svg {
 nav.breadcrumb {
   background: #eaeaea;
   padding: 5px 5px 5px 10px;
+  border-top: 1px solid #d1d1d1;
   border-bottom: 1px solid #d1d1d1;
 }
 nav.breadcrumb span {
@@ -586,4 +587,15 @@ header a span {
 }
 .site-menu .categories a:first-child {
   border-top: none;
+}
+
+.pagination {
+  width: 100%;
+  margin: 0 auto;
+}
+.pagination a {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 6px;
+  color: black;
 }
