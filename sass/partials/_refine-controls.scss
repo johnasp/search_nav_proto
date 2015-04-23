@@ -41,14 +41,14 @@
         font-size: 14px;
         font-weight: bold;
         text-align: center;
-        span {
+        span { 
           margin-top: 10px; 
           display: inline-block;
         }
         svg {
           height: 20px;
           position: absolute;
-          right: 3px;
+          right: 0;
           top: 10px;
         }
       }
