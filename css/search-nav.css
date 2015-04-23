@@ -590,7 +590,7 @@ header a span {
 }
 
 .pagination {
-  width: 100%;
+  width: 320px;
   margin: 0 auto;
 }
 .pagination a {
