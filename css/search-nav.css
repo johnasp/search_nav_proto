@@ -311,32 +311,44 @@ a {
 
 .site-menu {
   z-index: 1;
-  width: 100%;
+  width: 90%;
   height: 100%;
   position: absolute;
   top: 0;
-  left: -100%;
+  left: -90%;
   background: white;
 }
 
 .site-refinements {
   z-index: 1;
-  width: 100%;
+  width: 90%;
   height: 100%;
   position: absolute;
   top: 0;
-  right: -100%;
+  right: -90%;
   background: white;
 }
 
 .site-wrapper.show-right .site-canvas {
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-90%);
+  transform: translateX(-90%);
 }
 
 .site-wrapper.show-left .site-canvas {
-  -webkit-transform: translateX(100%);
-  transform: translateX(100%);
+  -webkit-transform: translateX(90%);
+  transform: translateX(90%);
+}
+
+/* =========================================
+             OVERLAY            
+/* ========================================*/
+.site-wrapper.show-left .overlay, .site-wrapper.show-right .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 /* =========================================
