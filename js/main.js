@@ -63,17 +63,15 @@ $(".burger-menu").click(function(){
     $(".site-wrapper").toggleClass("show-left");
 });
 // CLOSE LEFT OFF CANVAS
-$(".site-menu header").click(function() {
+$(".site-menu header, .overlay-left").click(function() {
 	$(".site-wrapper").toggleClass('show-left') 
 });
-
 // SHOW RIGHT OFF CANVAS
 $(".filter").click(function() {
 	$(".site-wrapper").toggleClass('show-right') 
 });
-
 // CLOSE RIGHT OFF CANVAS
-$(".site-refinements header a").click(function() {
+$(".site-refinements header a, .overlay-right").click(function() {
 	$(".site-wrapper").toggleClass('show-right') 
 });
 

@@ -342,7 +342,7 @@ a {
 /* =========================================
              OVERLAY            
 /* ========================================*/
-.site-wrapper.show-left .overlay, .site-wrapper.show-right .overlay {
+.site-wrapper.show-left .overlay-left, .site-wrapper.show-right .overlay-right {
   position: absolute;
   top: 0;
   width: 100%;
