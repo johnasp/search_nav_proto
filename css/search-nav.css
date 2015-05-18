@@ -473,17 +473,17 @@ nav.breadcrumb span {
 .show-search a {
   border-bottom: 1px solid orange;
 }
-.show-search a.burger-menu {
-  border-right: none;
-}
 
 .show-search .search {
   border-bottom: 1px solid white;
-  border-left: 1px solid orange;
   border-right: 1px solid orange;
 }
 .show-search .search svg {
   fill: orange;
+}
+
+.show-search .burger-menu {
+  border-right: 1px solid orange;
 }
 
 ::-webkit-input-placeholder {

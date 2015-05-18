@@ -57,20 +57,20 @@ nav.breadcrumb {
     color: darken($breadCrumbBG,40%);  
   }
 }
-
 .show-search .search-bar {
   max-height: 50px;
   border-bottom: 3px solid orange;
 }
 .show-search a {
   border-bottom: 1px solid orange;
-  &.burger-menu { border-right: none;}
 }
 .show-search .search {
   border-bottom: 1px solid white;
-  border-left: 1px solid orange;
   border-right: 1px solid orange;
   svg {fill: orange;}
+}
+.show-search .burger-menu {
+  border-right: 1px solid orange;
 }
 ::-webkit-input-placeholder {
    color: orange;
