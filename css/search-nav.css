@@ -468,26 +468,30 @@ nav.breadcrumb span {
 .show-search .search-bar {
   max-height: 50px;
   border-bottom: 3px solid orange;
-}
-
-.show-search a {
-  border-bottom: 1px solid orange;
+  position: relative;
+  z-index: 100;
 }
 
 .show-search .search {
-  border-bottom: 1px solid white;
-  border-right: 1px solid orange;
+  z-index: 101;
+  position: relative;
+  background: white;
 }
 .show-search .search svg {
   fill: orange;
 }
 
-.show-search .burger-menu {
-  border-right: 1px solid orange;
-}
-
 ::-webkit-input-placeholder {
   color: orange;
+}
+
+.show-search .overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 /* =========================================

@@ -74,10 +74,15 @@ $(".filter").click(function() {
 $(".site-refinements header a, .overlay-right").click(function() {
 	$(".site-wrapper").toggleClass('show-right') 
 });
-// CLOSE RIGHT OFF CANVAS
+// SHOW SEARCH BOX
 $(".search").click(function() {
 	$(".site-wrapper").toggleClass('show-search') 
 });
+// CLOSE OVERLAY
+$(".overlay").click(function() {
+	$(".site-wrapper").toggleClass('show-search overlay') 
+});
+
 
 
 
