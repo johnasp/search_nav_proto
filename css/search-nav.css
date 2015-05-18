@@ -417,7 +417,6 @@ header.main a {
   display: inline-block;
   width: 12.5%;
   cursor: pointer;
-  border-bottom: 1px solid #d1d1d1;
 }
 header.main a:last-child {
   border-right: none;
@@ -442,7 +441,11 @@ header.main .logo .checkout svg {
 }
 
 .search-bar {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s;
+  -moz-transition: max-height 0.3s;
+  transition: max-height 0.3s;
   border-bottom: 1px solid #d1d1d1;
   padding: 0;
 }
@@ -450,6 +453,7 @@ header.main .logo .checkout svg {
   width: 100%;
   border: none;
   padding: 12px;
+  color: orange;
 }
 
 nav.breadcrumb {
@@ -462,11 +466,22 @@ nav.breadcrumb span {
 }
 
 .show-search .search-bar {
-  display: block;
+  max-height: 50px;
+}
+
+.show-search a {
+  border-bottom: 1px solid #d1d1d1;
 }
 
 .show-search .search {
-  border-bottom: none;
+  border-bottom: 1px solid white;
+}
+.show-search .search svg {
+  fill: orange;
+}
+
+::-webkit-input-placeholder {
+  color: orange;
 }
 
 /* =========================================

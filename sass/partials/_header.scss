@@ -13,7 +13,6 @@ header.main {
     display: inline-block;
     width: 12.5%;
     cursor: pointer;
-    border-bottom: 1px solid $divider;
     &:last-child {border-right: none;}
   }
   svg {
@@ -36,13 +35,18 @@ header.main {
   }
 }    
 .search-bar {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s;
+  -moz-transition: max-height 0.3s;
+  transition: max-height 0.3s;
   border-bottom: 1px solid $divider;
   padding: 0;
   input {
     width: 100%;
     border: none;
     padding: 12px;
+    color: orange;
   }
 }
 nav.breadcrumb {
@@ -55,8 +59,15 @@ nav.breadcrumb {
 }
 
 .show-search .search-bar {
-  display: block;
+  max-height: 50px;
+}
+.show-search a {
+  border-bottom: 1px solid $divider;
 }
 .show-search .search {
-  border-bottom: none;
+  border-bottom: 1px solid white;
+  svg {fill: orange;}
+}
+::-webkit-input-placeholder {
+   color: orange;
 }
