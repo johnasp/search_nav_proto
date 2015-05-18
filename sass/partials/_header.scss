@@ -12,16 +12,20 @@ header.main {
     border-right: 1px solid $divider;
     display: inline-block;
     width: 12.5%;
-    &:last-child {border: none;}
     cursor: pointer;
+    border-bottom: 1px solid $divider;
+    &:last-child {border-right: none;}
   }
   svg {
-    height: 38px; 
-    margin: 0 auto;
+    height: 42px;
+    width: 42px; 
+    margin: 0 auto; 
     display: block;
+    padding-top: 1px;
   }
   .logo {
     width: 50%;
+    height: 42px;
     svg {
       width: 100%;
       display: inline-block;
@@ -31,13 +35,28 @@ header.main {
    }
   }
 }    
+.search-bar {
+  display: none;
+  border-bottom: 1px solid $divider;
+  padding: 0;
+  input {
+    width: 100%;
+    border: none;
+    padding: 12px;
+  }
+}
 nav.breadcrumb {
   background: lighten($breadCrumbBG,10%);
   padding: 5px 5px 5px 10px;
-  border-top: 1px solid $breadCrumbBG;
   border-bottom: 1px solid $breadCrumbBG;
   span {
-    color: darken($breadCrumbBG,40%);
-    
+    color: darken($breadCrumbBG,40%);  
   }
+}
+
+.show-search .search-bar {
+  display: block;
+}
+.show-search .search {
+  border-bottom: none;
 }
