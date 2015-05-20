@@ -57,6 +57,9 @@ nav.breadcrumb {
     color: darken($breadCrumbBG,40%);  
   }
 }
+/* =========================================
+             SEARCH BAR           
+/* ========================================*/
 .show-search .search-bar {
   max-height: 50px;
   border-bottom: 3px solid orange;
@@ -67,6 +70,9 @@ nav.breadcrumb {
   z-index: 101;
   position: relative;
   background: white;
+  border-bottom: 1px solid white;
+  border-right: 1px solid black;
+
   svg {
     fill: orange;
   }
