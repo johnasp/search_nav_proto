@@ -5,9 +5,12 @@
     border: 1px solid black;
     padding: 6px;
     color: black;
-    width: 23px;
+    width: 34px;
     text-align: center;
-    margin-right: 5px;
+    margin-right: 3px;
+    &.beforeCut {margin-right: 0;}
+    &:last-child {margin-right: 0;}
+    &.active {background: #eaeaea;}
   }
   span {
   	padding: 0px;
