@@ -1,10 +1,15 @@
 .pagination {
-  width: 320px;
-  margin:0 auto;
+  text-align: center;
   a {
     display: inline-block;
     border: 1px solid black;
     padding: 6px;
     color: black;
+    width: 40px;
+    text-align: center;
+    margin-right: 3px;
+  }
+  span {
+  	padding: 3px;
   }
 }

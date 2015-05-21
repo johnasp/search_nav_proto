@@ -656,12 +656,17 @@ header a span {
 }
 
 .pagination {
-  width: 320px;
-  margin: 0 auto;
+  text-align: center;
 }
 .pagination a {
   display: inline-block;
   border: 1px solid black;
   padding: 6px;
   color: black;
+  width: 40px;
+  text-align: center;
+  margin-right: 3px;
+}
+.pagination span {
+  padding: 3px;
 }
