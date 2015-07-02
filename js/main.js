@@ -71,7 +71,8 @@ $(".burger-menu").click(function(){
 });
 // CLOSE LEFT OFF CANVAS
 $(".site-menu header, .overlay-left").click(function() {
-	$(".site-wrapper").toggleClass('show-left') 
+	$(".site-wrapper").toggleClass('show-left');
+	$(".content").css('display','block'); 
 });
 // SHOW RIGHT OFF CANVAS
 $(".filter").click(function() {
