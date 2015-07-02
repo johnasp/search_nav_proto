@@ -277,7 +277,8 @@ a {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   -webkit-transition: .3s ease all;
-  transition: .3s ease all; }
+  transition: .3s ease all;
+  min-height: 800px; }
 
 .site-menu {
   z-index: 1;

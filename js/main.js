@@ -66,6 +66,7 @@ $(".categories > a").click(function() {
 // OPEN LEFT OFF CANVAS & HIDE CONTENT
 $(".burger-menu").click(function(){
     $(".site-wrapper").toggleClass("show-left");
+    $(".content").css('display','none');
    
 });
 // CLOSE LEFT OFF CANVAS
