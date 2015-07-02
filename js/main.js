@@ -63,9 +63,10 @@ $(".categories > a").click(function() {
     }, 500);
 });
 
-// OPEN LEFT OFF CANVAS
+// OPEN LEFT OFF CANVAS & HIDE CONTENT
 $(".burger-menu").click(function(){
     $(".site-wrapper").toggleClass("show-left");
+   
 });
 // CLOSE LEFT OFF CANVAS
 $(".site-menu header, .overlay-left").click(function() {

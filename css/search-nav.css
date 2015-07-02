@@ -1,27 +1,22 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 *, *:before, *:after {
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 html {
   height: 100%;
-  /* Allow DIVs to set with relative height */
-}
+  /* Allow DIVs to set with relative height */ }
 
 body, .main-nav {
-  height: 100%;
-}
+  height: 100%; }
 
 /* Allow DIVs to set with relative height */
 .clearfix:after {
   content: "";
   display: table;
-  clear: both;
-}
+  clear: both; }
 
 /* ==========================================================================
    HTML5 display definitions
@@ -40,8 +35,7 @@ hgroup,
 nav,
 section,
 summary {
-  display: block;
-}
+  display: block; }
 
 /*
  * Corrects `inline-block` display not defined in IE 8/9.
@@ -49,8 +43,7 @@ summary {
 audio,
 canvas,
 video {
-  display: inline-block;
-}
+  display: inline-block; }
 
 /*
  * Prevents modern browsers from displaying `audio` without controls.
@@ -58,15 +51,13 @@ video {
  */
 audio:not([controls]) {
   display: none;
-  height: 0;
-}
+  height: 0; }
 
 /*
  * Addresses styling for `hidden` attribute not present in IE 8/9.
  */
 [hidden] {
-  display: none;
-}
+  display: none; }
 
 /* ==========================================================================
    Base
@@ -82,15 +73,13 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
   -ms-text-size-adjust: 100%;
-  /* 2 */
-}
+  /* 2 */ }
 
 /*
  * Removes default margin.
  */
 body {
-  margin: 0;
-}
+  margin: 0; }
 
 /* ==========================================================================
    Embedded content
@@ -99,15 +88,13 @@ body {
  * Removes border when inside `a` element in IE 8/9.
  */
 img {
-  border: 0;
-}
+  border: 0; }
 
 /*
  * Corrects overflow displayed oddly in IE 9.
  */
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 /* ==========================================================================
    Figures
@@ -116,8 +103,7 @@ svg:not(:root) {
  * Addresses margin not present in IE 8/9 and Safari 5.
  */
 figure {
-  margin: 0;
-}
+  margin: 0; }
 
 /* ==========================================================================
    Forms
@@ -128,8 +114,7 @@ figure {
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
+  padding: 0.35em 0.625em 0.75em; }
 
 /*
  * 1. Corrects color not being inherited in IE 8/9.
@@ -139,8 +124,7 @@ legend {
   border: 0;
   /* 1 */
   padding: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /*
  * 1. Corrects font family not being inherited in all browsers.
@@ -156,8 +140,7 @@ textarea {
   font-size: 100%;
   /* 2 */
   margin: 0;
-  /* 3 */
-}
+  /* 3 */ }
 
 /*
  * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -165,8 +148,7 @@ textarea {
  */
 button,
 input {
-  line-height: normal;
-}
+  line-height: normal; }
 
 /*
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -182,16 +164,14 @@ input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
-  /* 3 */
-}
+  /* 3 */ }
 
 /*
  * Re-set default cursor for disabled elements.
  */
 button[disabled],
 input[disabled] {
-  cursor: default;
-}
+  cursor: default; }
 
 /*
  * 1. Addresses box sizing set to `content-box` in IE 8/9.
@@ -202,8 +182,7 @@ input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */
-}
+  /* 2 */ }
 
 /*
  * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -216,8 +195,7 @@ input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box;
-}
+  box-sizing: content-box; }
 
 /*
  * Removes inner padding and search cancel button in Safari 5 and Chrome
@@ -225,8 +203,7 @@ input[type="search"] {
  */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 /*
  * Removes inner padding and border in Firefox 4+.
@@ -234,8 +211,7 @@ input[type="search"]::-webkit-search-decoration {
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * 1. Removes default vertical scrollbar in IE 8/9.
@@ -245,8 +221,7 @@ textarea {
   overflow: auto;
   /* 1 */
   vertical-align: top;
-  /* 2 */
-}
+  /* 2 */ }
 
 /* ==========================================================================
    Tables
@@ -256,8 +231,7 @@ textarea {
  */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /* =========================================
              VARS            
@@ -266,27 +240,27 @@ table {
              GLOBAL STYLES           
 /* ========================================*/
 body {
-  font-family: 'Open Sans', sans-serif;
-}
+  font-family: 'Open Sans', sans-serif; }
 
 a {
   text-decoration: none;
   display: inline-block;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 .screen-reader {
   position: absolute;
   top: -9999px;
-  left: -9999px;
-}
+  left: -9999px; }
 
 .content {
-  padding: 0 6px;
-}
-.content div {
-  margin-bottom: 12px;
-}
+  padding: 0 6px; }
+  .content div {
+    margin-bottom: 12px; }
+
+.hide {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
 
 /* =========================================
              OFF CANVAS INITIALISERS            
@@ -294,10 +268,7 @@ a {
 .site-wrapper {
   position: relative;
   overflow: hidden;
-  width: 100%;
-  height: 2000px;
-  /* For proto only, remove on production */
-}
+  width: 100%; }
 
 .site-canvas {
   width: 100%;
@@ -306,8 +277,7 @@ a {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-}
+  transition: .3s ease all; }
 
 .site-menu {
   z-index: 1;
@@ -316,8 +286,7 @@ a {
   position: absolute;
   top: 0;
   left: -88%;
-  background: white;
-}
+  background: white; }
 
 .site-refinements {
   z-index: 1;
@@ -326,18 +295,15 @@ a {
   position: absolute;
   top: 0;
   right: -88%;
-  background: white;
-}
+  background: white; }
 
 .site-wrapper.show-right .site-canvas {
-  -webkit-transform: translateX(-88%);
-  transform: translateX(-88%);
-}
+  -webkit-transform: translate(-88%);
+  transform: translate(-88%); }
 
 .site-wrapper.show-left .site-canvas {
-  -webkit-transform: translateX(88%);
-  transform: translateX(88%);
-}
+  -webkit-transform: translate(88%);
+  transform: translate(88%); }
 
 /* =========================================
              OVERLAY            
@@ -348,97 +314,78 @@ a {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.65);
-}
+  background-color: rgba(0, 0, 0, 0.65); }
 
 /* =========================================
              CATEGORIES LISTS           
 /* ========================================*/
 .categories > a {
-  border-top: 1px solid #d9d9d9;
-}
-.categories > a:nth-last-child(2) {
-  border-bottom: 1px solid #d9d9d9;
-}
+  border-top: 1px solid #d9d9d9; }
+  .categories > a:nth-last-child(2) {
+    border-bottom: 1px solid #d9d9d9; }
 .categories a {
   padding: 12px;
   width: 100%;
   color: #000;
-  text-transform: uppercase;
-}
-.categories a[class*="category"] svg {
-  width: 13px;
-  float: right;
-  fill: #333;
-  padding-top: 4px;
-  height: 20px;
-}
-.categories a.active {
-  font-weight: bold;
-  background: #e1e1e1;
-}
-.categories a.active svg:last-child {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-}
+  text-transform: uppercase; }
+  .categories a[class*="category"] svg {
+    width: 13px;
+    float: right;
+    fill: #333;
+    padding-top: 4px;
+    height: 20px; }
+  .categories a.active {
+    font-weight: bold;
+    background: #e1e1e1; }
+    .categories a.active svg:last-child {
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg); }
 .categories nav {
-  display: none;
-}
-.categories nav.grid a {
-  width: 49.3%;
-}
-.categories nav a {
-  position: relative;
-  border-bottom: none;
-  text-transform: capitalize;
-}
-.categories nav a.selected {
-  color: #519946;
-  background: #ebf5e9;
-}
-.categories nav a svg {
-  fill: #69b55d;
-  position: absolute;
-  top: 15px;
-  right: 13px;
-  width: 15px;
-  height: 18px;
-}
+  display: none; }
+  .categories nav.grid a {
+    width: 49.3%; }
+  .categories nav a {
+    position: relative;
+    border-bottom: none;
+    text-transform: capitalize; }
+    .categories nav a.selected {
+      color: #519946;
+      background: #ebf5e9; }
+    .categories nav a svg {
+      fill: #69B55D;
+      position: absolute;
+      top: 15px;
+      right: 13px;
+      width: 15px;
+      height: 18px; }
 
 /* =========================================
              HEADER           
 /* ========================================*/
 header.main {
   font-size: 0;
-  position: relative;
-}
-header.main a {
-  border-right: 1px solid #d1d1d1;
-  display: inline-block;
-  width: 12.5%;
-  cursor: pointer;
-}
-header.main a:last-child {
-  border-right: none;
-}
-header.main svg {
-  height: 42px;
-  width: 42px;
-  margin: 0 auto;
-  display: block;
-  padding-top: 1px;
-}
-header.main .logo {
-  width: 50%;
-  height: 42px;
-}
-header.main .logo svg {
-  width: 100%;
-  display: inline-block;
-}
-header.main .logo .checkout svg {
-  height: 48px;
-}
+  position: relative; }
+  header.main a {
+    border-right: 1px solid #d1d1d1;
+    display: inline-block;
+    width: 12.5%;
+    cursor: pointer; }
+    header.main a:last-child {
+      border-right: none; }
+  header.main svg {
+    height: 42px;
+    width: 42px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 1px; }
+  header.main .logo {
+    width: 50%;
+    height: 42px; }
+    header.main .logo svg {
+      width: 100%;
+      display: inline-block; }
+    header.main .logo .checkout svg {
+      height: 48px; }
 
 .search-bar {
   max-height: 0;
@@ -447,23 +394,19 @@ header.main .logo .checkout svg {
   -moz-transition: max-height 0.3s;
   transition: max-height 0.3s;
   border-bottom: 1px solid #d1d1d1;
-  padding: 0;
-}
-.search-bar input {
-  width: 100%;
-  border: none;
-  padding: 12px;
-  color: orange;
-}
+  padding: 0; }
+  .search-bar input {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    color: orange; }
 
 nav.breadcrumb {
   background: #eaeaea;
   padding: 5px 5px 5px 10px;
-  border-bottom: 1px solid #d1d1d1;
-}
-nav.breadcrumb span {
-  color: #6b6b6b;
-}
+  border-bottom: 1px solid #d1d1d1; }
+  nav.breadcrumb span {
+    color: #6b6b6b; }
 
 /* =========================================
              SEARCH BAR           
@@ -472,23 +415,19 @@ nav.breadcrumb span {
   max-height: 50px;
   border-bottom: 3px solid orange;
   position: relative;
-  z-index: 100;
-}
+  z-index: 100; }
 
 .show-search .search {
   z-index: 101;
   position: relative;
   background: white;
   border-bottom: 1px solid white;
-  border-right: 1px solid black;
-}
-.show-search .search svg {
-  fill: orange;
-}
+  border-right: 1px solid black; }
+  .show-search .search svg {
+    fill: orange; }
 
 ::-webkit-input-placeholder {
-  color: orange;
-}
+  color: orange; }
 
 .show-search .overlay {
   position: absolute;
@@ -496,68 +435,57 @@ nav.breadcrumb span {
   width: 100%;
   height: 100%;
   z-index: 99;
-  background-color: rgba(0, 0, 0, 0.55);
-}
+  background-color: rgba(0, 0, 0, 0.55); }
 
 /* =========================================
              REFINE CONTROLS          
 /* ========================================*/
 .refine-controls {
   position: relative;
-  padding: 6px;
-}
-.refine-controls .fixed-col {
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  width: 86px;
-  height: 40px;
-  border: 1px solid black;
-  padding: 3px 0 0 5px;
-}
-.refine-controls .fixed-col a {
-  display: inline-block;
-  height: 34px;
-}
-.refine-controls .fixed-col svg {
-  height: 36px;
-  width: 36px;
-}
-.refine-controls .fluid-col {
-  margin-left: 86px;
-  display: block;
-  position: relative;
-  top: 0;
-  overflow: hidden;
-}
-.refine-controls .fluid-col section {
-  width: 50%;
-  float: left;
-  padding-left: 6px;
-}
-.refine-controls .fluid-col section.filter svg {
-  height: 15px;
-}
-.refine-controls .fluid-col section a {
-  display: block;
-  border: 1px solid #000;
-  height: 40px;
-  position: relative;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-}
-.refine-controls .fluid-col section a span {
-  margin-top: 10px;
-  display: inline-block;
-}
-.refine-controls .fluid-col section a svg {
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  right: 3px;
-  top: 10px;
-}
+  padding: 6px; }
+  .refine-controls .fixed-col {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 86px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 3px 0 0 5px; }
+    .refine-controls .fixed-col a {
+      display: inline-block;
+      height: 34px; }
+    .refine-controls .fixed-col svg {
+      height: 36px;
+      width: 36px; }
+  .refine-controls .fluid-col {
+    margin-left: 86px;
+    display: block;
+    position: relative;
+    top: 0;
+    overflow: hidden; }
+    .refine-controls .fluid-col section {
+      width: 50%;
+      float: left;
+      padding-left: 6px; }
+      .refine-controls .fluid-col section.filter svg {
+        height: 15px; }
+      .refine-controls .fluid-col section a {
+        display: block;
+        border: 1px solid #000;
+        height: 40px;
+        position: relative;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center; }
+        .refine-controls .fluid-col section a span {
+          margin-top: 10px;
+          display: inline-block; }
+        .refine-controls .fluid-col section a svg {
+          height: 20px;
+          width: 20px;
+          position: absolute;
+          right: 3px;
+          top: 10px; }
 
 /* =========================================
              REFINEMENTS MENU
@@ -567,115 +495,98 @@ header {
   top: 0;
   width: 100%;
   background: #fff;
-  z-index: 999;
-}
-.site-refinements
-header a {
-  background: #0199cb;
-  padding: 12px;
-  width: 100%;
-  text-align: center;
-  display: block;
-}
-.site-refinements
-header a svg {
-  width: 24px;
-  fill: #fff;
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-  vertical-align: middle;
-  float: left;
-  height: 24px;
-}
-.site-refinements
-header a span {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-}
+  z-index: 999; }
+  .site-refinements
+  header a {
+    background: #0199CB;
+    padding: 12px;
+    width: 100%;
+    text-align: center;
+    display: block; }
+    .site-refinements
+    header a svg {
+      width: 24px;
+      fill: #fff;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+      vertical-align: middle;
+      float: left;
+      height: 24px; }
+    .site-refinements
+    header a span {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600; }
 
 .site-refinements .filters {
-  padding: 0 6px 0 6px;
-}
-.site-refinements .filters p {
-  margin-bottom: 6px;
-}
-.site-refinements .filters a {
-  display: inline-block;
-  background: #69b55d;
-  padding: 8px 10px;
-  margin: 0 6px 6px 0;
-  position: relative;
-}
-.site-refinements .filters a span {
-  color: #fff;
-  font-size: 14px;
-}
-.site-refinements .filters a svg {
-  width: 10px;
-  height: 10px;
-  fill: #fff;
-  position: absolute;
-  right: 1px;
-  top: 1px;
-}
+  padding: 0 6px 0 6px; }
+  .site-refinements .filters p {
+    margin-bottom: 6px; }
+  .site-refinements .filters a {
+    display: inline-block;
+    background: #69B55D;
+    padding: 8px 10px;
+    margin: 0 6px 6px 0;
+    position: relative; }
+    .site-refinements .filters a span {
+      color: #fff;
+      font-size: 14px; }
+    .site-refinements .filters a svg {
+      width: 10px;
+      height: 10px;
+      fill: #fff;
+      position: absolute;
+      right: 1px;
+      top: 1px; }
 
 /* =========================================
              SITE MENU          
 /* ========================================*/
-.site-menu header {
-  background: black;
-  position: relative;
-  height: 48px;
-  box-sizing: border-box;
-}
-.site-menu header span {
-  color: #fff;
-  position: absolute;
-  top: 13px;
-  left: 10px;
-}
-.site-menu header svg {
-  fill: white;
-  position: absolute;
-  height: 22px;
-  width: 22px;
-  right: 10px;
-  top: 13px;
-}
-.site-menu img {
-  max-width: 100%;
-}
-.site-menu .categories {
-  position: relative;
-  margin-top: 0;
-  top: -5px;
-}
-.site-menu .categories a:first-child {
-  border-top: none;
-}
+.site-menu {
+  overflow: auto; }
+  .site-menu header {
+    background: black;
+    position: relative;
+    height: 48px;
+    box-sizing: border-box; }
+    .site-menu header span {
+      color: #fff;
+      position: absolute;
+      top: 13px;
+      left: 10px; }
+    .site-menu header svg {
+      fill: white;
+      position: absolute;
+      height: 22px;
+      width: 22px;
+      right: 10px;
+      top: 13px; }
+  .site-menu img {
+    max-width: 100%; }
+  .site-menu .categories {
+    position: relative;
+    margin-top: 0;
+    top: -5px; }
+    .site-menu .categories a:first-child {
+      border-top: none; }
 
 .pagination {
-  text-align: center;
-}
-.pagination a {
-  display: inline-block;
-  border: 1px solid black;
-  padding: 6px;
-  color: black;
-  width: 34px;
-  text-align: center;
-  margin-right: 3px;
-}
-.pagination a.beforeCut {
-  margin-right: 0;
-}
-.pagination a:last-child {
-  margin-right: 0;
-}
-.pagination a.active {
-  background: #eaeaea;
-}
-.pagination span {
-  padding: 0px;
-}
+  text-align: center; }
+  .pagination a {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 6px;
+    color: black;
+    width: 34px;
+    text-align: center;
+    margin-right: 3px; }
+    .pagination a.beforeCut {
+      margin-right: 0; }
+    .pagination a:last-child {
+      margin-right: 0; }
+    .pagination a.active {
+      background: #eaeaea; }
+  .pagination span {
+    padding: 0px; }
+
+/*# sourceMappingURL=search-nav.css.map */
