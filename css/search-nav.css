@@ -542,8 +542,7 @@ header {
              SITE MENU          
 /* ========================================*/
 .site-menu {
-  overflow: auto;
-  border: 2px solid red; }
+  overflow: auto; }
   .site-menu header {
     background: black;
     position: relative;
