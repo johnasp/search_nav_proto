@@ -277,13 +277,11 @@ a {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-  min-height: 800px; }
+  transition: .3s ease all; }
 
 .site-menu {
   z-index: 1;
   width: 88%;
-  height: 100%;
   position: absolute;
   top: 0;
   left: -88%;
@@ -544,7 +542,8 @@ header {
              SITE MENU          
 /* ========================================*/
 .site-menu {
-  overflow: auto; }
+  overflow: auto;
+  border: 2px solid red; }
   .site-menu header {
     background: black;
     position: relative;
