@@ -63,22 +63,14 @@ $(".categories > a").click(function() {
     }, 500);
 });
 
-// OPEN LEFT OFF CANVAS & SET HEIGHT OF CANVAS TO SITE OF MENU
+// OPEN LEFT OFF CANVAS & HIDE CONTENT
 $(".burger-menu").click(function(){
     $(".site-wrapper").toggleClass("show-left");
-    var theMenu = $(".site-menu").height();
-    $(".site-canvas").css('height',theMenu);     
-    $(".site-menu").css('height', '100%'); 
+   
 });
-
-// CLOSE LEFT OFF CANVAS, RESET CANVAS HEIGHT TO 100%, REMOVE 100% HEIGHT FROM MENU, CLOSE ALL OPEN NAVIGATION PANELS
+// CLOSE LEFT OFF CANVAS
 $(".site-menu header, .overlay-left").click(function() {
-	$(".site-wrapper").toggleClass('show-left');
-    $(".site-canvas").css('height','100%'); 
-    $(".site-menu").removeAttr('style');
-    $(".categories a").removeClass('active');
-    $(".categories nav").removeAttr('style');    
-
+	$(".site-wrapper").toggleClass('show-left') 
 });
 // SHOW RIGHT OFF CANVAS
 $(".filter").click(function() {
@@ -96,8 +88,6 @@ $(".search").click(function() {
 $(".overlay").click(function() {
 	$(".site-wrapper").toggleClass('show-search overlay') 
 });
-
-
 
 
 

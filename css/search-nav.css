@@ -282,6 +282,7 @@ a {
 .site-menu {
   z-index: 1;
   width: 88%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: -88%;
