@@ -66,9 +66,9 @@ $(".categories > a").click(function() {
 // OPEN LEFT OFF CANVAS & SET HEIGHT OF CANVAS TO SITE OF MENU
 $(".burger-menu").click(function(){
     $(".site-wrapper").toggleClass("show-left");
-    var theMenu = $(".site-menu").height();
-    $(".site-canvas").css('height',theMenu);     
-    $(".site-menu").css('height', '100%'); 
+   // var theMenu = $(".site-menu").height();
+   // $(".site-canvas").css('height',theMenu);     
+    //$(".site-menu").css('height', '100%'); 
 });
 
 // CLOSE LEFT OFF CANVAS, RESET CANVAS HEIGHT TO 100%, REMOVE 100% HEIGHT FROM MENU, CLOSE ALL OPEN NAVIGATION PANELS
