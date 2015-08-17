@@ -69,7 +69,7 @@ $(".burger-menu").click(function(){
    // var theMenu = $(".site-menu").height();
    // $(".site-canvas").css('height',theMenu);     
     //$(".site-menu").css('height', '100%'); 
-});
+}); 
 
 // CLOSE LEFT OFF CANVAS, RESET CANVAS HEIGHT TO 100%, REMOVE 100% HEIGHT FROM MENU, CLOSE ALL OPEN NAVIGATION PANELS
 $(".site-menu header, .overlay-left").click(function() {
