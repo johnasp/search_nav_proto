@@ -2,7 +2,6 @@ $(function() {
     FastClick.attach(document.body);
 });
 
-
 $( document ).ready(function() {
 
 // MENU SYSTEM
@@ -77,18 +76,19 @@ $(".site-menu header, .overlay-left").click(function() {
 });
 // OPEN RIGHT OFF CANVAS, LOCK SCROLLING, ENABLE Y-SCROLL ON REFINEMENTS MENU
 $(".filter").click(function() {
-	$(".site-wrapper").toggleClass('show-right') 
+	$(".site-wrapper").toggleClass('show-right');
     $("body").toggleClass("scroll-lock");
     setSiteRefinementsHeight();
 });
 // CLOSE RIGHT OFF CANVAS & UNLOCK SCROLL
 $(".site-refinements header a, .overlay-right").click(function() {
-	$(".site-wrapper").toggleClass('show-right') 
+	$(".site-wrapper").toggleClass('show-right');
     $("body").toggleClass("scroll-lock");
 });
 // SHOW SEARCH BOX
 $(".search").click(function() {
-	$(".site-wrapper").toggleClass('show-search') 
+	$(".site-wrapper").toggleClass('show-search');
+	$(".search-input").focus(); //add focus to form field on click which makes keyboard appear
 });
 // CLOSE OVERLAY
 $(".overlay").click(function() {

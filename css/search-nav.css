@@ -7,7 +7,9 @@
 .site-refinements {
   overflow: auto;
 }
-
+.pagination {
+  margin-bottom: 12px;
+}
 
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
