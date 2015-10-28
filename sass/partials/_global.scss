@@ -15,6 +15,9 @@ $divider: darken(#e1e1e1,3%);
 body {
   font-family: 'Open Sans', sans-serif;
 }
+.scroll-lock {
+  position: fixed;
+}
 a {
   text-decoration: none;
   display: inline-block;

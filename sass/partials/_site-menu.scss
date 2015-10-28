@@ -3,11 +3,10 @@
 /* ========================================*/
 
 .site-menu {
-  overflow: auto;
+  overflow-y: scroll;
   header {
     background: black;
     position: relative;
-    height: 48px;
     box-sizing: border-box;
       span {
         color: #fff;

@@ -1,6 +1,22 @@
+.site-menu > nav > nav.active > a, div.site-refinements > nav.categories.facets > nav.active > a {
+  border-bottom: 1px dotted #ddd;
+}
+.site-menu > nav > nav.active > a:last-child, div.site-refinements > nav.categories.facets > nav.active > a:last-child {
+  border-bottom: none;
+}
+.site-refinements {
+  overflow: auto;
+}
+
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box; }
+
+.scroll-lock {
+  position: fixed;
+  
+}
 
 *, *:before, *:after {
   box-sizing: inherit; }

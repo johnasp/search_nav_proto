@@ -17,7 +17,7 @@ $( document ).ready(function() {
 });
 
 // BUTTON SYSTEM
-$(".categories nav a").click(function() {
+$(".facets nav a").click(function() {
 	// Strip product count and brackets from text to generate unique ID 
 	var filterText = $(this).text();
 	var n=filterText.indexOf("(");
@@ -43,7 +43,7 @@ $(".categories nav a").click(function() {
 	else {
 		// Remove active state for refinement selections and also remove related filter button
 		$(this).removeClass("selected");
-		$(".categories #label-" + uniqueID + " svg").remove();
+		$(".facets #label-" + uniqueID + " svg").remove();
 		$(".filters #label-" + uniqueID).remove();
 	}
 });
@@ -52,41 +52,39 @@ $(".categories nav a").click(function() {
 $(".filters").on("click", "a", function() {
 	$(this).remove();
 	var idTag = $(this).attr("id");
-	$(".categories nav a#" + idTag).removeClass("selected");
-	$(".categories nav a#" + idTag + " svg").remove();
+	$(".facets nav a#" + idTag).removeClass("selected");
+	$(".facets nav a#" + idTag + " svg").remove();
 });
 
 // SCROLL REFINEMENT HEADER BUTTON TO TOP WHEN CLICKED
-$(".categories > a").click(function() {
+$(".facets > a").click(function() {
     $('html, body').animate({
        scrollTop: (($(this).offset().top) - (30))
     }, 500);
 });
 
-// OPEN LEFT OFF CANVAS & SET HEIGHT OF CANVAS TO SITE OF MENU
+// OPEN LEFT OFF CANVAS, SET BODY TO POSITION FIXED IN ORDER CHOP OFF WHITESPACE BELOW MENU, MEASURE VIEWPORT HEIGHT AND ASSIGN THIS HEIGHT TO THE HEIGHT OF #SITE-MENU IN ORDER TO ALLOW OVERFLOW-Y: SCROLL TO BECOME ACTIVE, CANT Y SCROLL A DIV WITHOUT ITS HEIGHT BEING SET
 $(".burger-menu").click(function(){
     $(".site-wrapper").toggleClass("show-left");
-   // var theMenu = $(".site-menu").height();
-   // $(".site-canvas").css('height',theMenu);     
-    //$(".site-menu").css('height', '100%'); 
+    $("body").toggleClass("scroll-lock");
+    setSiteMenuHeight();
 }); 
 
-// CLOSE LEFT OFF CANVAS, RESET CANVAS HEIGHT TO 100%, REMOVE 100% HEIGHT FROM MENU, CLOSE ALL OPEN NAVIGATION PANELS
+// CLOSE LEFT OFF-CANVAS & UNLOCK SCROLL
 $(".site-menu header, .overlay-left").click(function() {
-	$(".site-wrapper").toggleClass('show-left');
-    $(".site-canvas").css('height','100%'); 
-    $(".site-menu").removeAttr('style');
-    $(".categories a").removeClass('active');
-    $(".categories nav").removeAttr('style');    
-
+	$("body").toggleClass("scroll-lock");
+	$(".site-wrapper").toggleClass('show-left');  
 });
-// SHOW RIGHT OFF CANVAS
+// OPEN RIGHT OFF CANVAS, LOCK SCROLLING, ENABLE Y-SCROLL ON REFINEMENTS MENU
 $(".filter").click(function() {
 	$(".site-wrapper").toggleClass('show-right') 
+    $("body").toggleClass("scroll-lock");
+    setSiteRefinementsHeight();
 });
-// CLOSE RIGHT OFF CANVAS
+// CLOSE RIGHT OFF CANVAS & UNLOCK SCROLL
 $(".site-refinements header a, .overlay-right").click(function() {
 	$(".site-wrapper").toggleClass('show-right') 
+    $("body").toggleClass("scroll-lock");
 });
 // SHOW SEARCH BOX
 $(".search").click(function() {
@@ -97,7 +95,12 @@ $(".overlay").click(function() {
 	$(".site-wrapper").toggleClass('show-search overlay') 
 });
 
-
+function setSiteMenuHeight() {
+	$(".site-menu").css('height', $(window).height()); 
+}
+function setSiteRefinementsHeight() {
+	$(".site-refinements").css('height', $(window).height()); 
+}
 
 
 
